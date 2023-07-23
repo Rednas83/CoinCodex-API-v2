@@ -10,9 +10,9 @@ A Node.js wrapper for the CoinCodex API with no dependencies.
 
 ## • Installation
 
-Latest version: 1.0.0
+Latest version: 2.0.0
 
-`npm install coincodex-api`
+`npm install coincodex-api-v2`
 
 ## • CoinCodex API Documentation
 
@@ -49,9 +49,9 @@ All calls are returned in the following format:
 
 The CoinCodexClient splits up the currently available calls outline in the official CoinCodex API documentation into two parts. (Including `firstPageHistory()`)
 
-| Namespace | Usage | Description |
-| --- | --- | --- |
-`coins` | `CoinCodexClient.coins[...]` | Calls related to coins
+| Namespace | Usage                        | Description            |
+| --------- | ---------------------------- | ---------------------- |
+| `coins`   | `CoinCodexClient.coins[...]` | Calls related to coins |
 
 ___
 ### • First Page History

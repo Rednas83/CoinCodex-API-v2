@@ -1,0 +1,6 @@
+{
+  "watch": ["lib", "test"],
+  "ext": ".ts",
+  "ignore": [],
+  "exec": "npx ts-node index.ts"
+}

@@ -2,12 +2,15 @@
   "name": "coincodex-api-v2",
   "version": "2.0.0",
   "description": "A Node.js wrapper for the CoinCodex API with no dependencies.",
-  "main": "index.js",
+  "main": "index",
   "homepage": "https://github.com/miscavage/CoinCodex-API#readme",
   "author": "Sander Sierdsma",
   "license": "MIT",
   "scripts": {
-    "test": "mocha --no-timeouts --reporter spec \"./tests/lib/*.js\" \"./tests/lib/**/*.js\""
+    "test": "mocha --no-timeouts --reporter spec \"./build/test/*.*\" \"./build/test/**/*.*\"",
+    "dev": "npx nodemon --quiet",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +32,14 @@
     "api-client"
   ],
   "devDependencies": {
+    "@types/node": "^20.4.4",
     "chai": "^4.3.7",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1"
   }
 }
